@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+    <!-- tailwindcss and daisyui CDN  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white">
+    <!-- Navbar Sticky -->
+    <header class="sticky top-0 z-50">
+      <nav class="bg-white/30 backdrop-blur-md border-b">
+        <div
+          class="navbar px-4 md:px-10 lg:px-32 py-4 md:py-6 border-b grid grid-cols-3 items-center bg-orange-500/30"
+        >
+          <!-- Left -->
+          <div class="flex justify-start">
+            <a
+              id="blog-btn"
+              href="#"
+              class="btn hover:bg-black hover:text-white bg-[#B4F461] text-sm md:text-xl font-bold"
+            >
+              Blog
+            </a>
+          </div>
+
+          <!-- Center -->
+          <div class="flex justify-center items-center gap-2">
+            <img
+              class="w-8 h-8 md:w-12 md:h-12"
+              src="/assets/logo.png"
+              alt=""
+            />
+            <h2 class="text-sm md:text-xl font-semibold whitespace-nowrap">
+              Donate Bangladesh
+            </h2>
+          </div>
+
+          <!-- Right -->
+          <div class="flex justify-end items-center gap-2">
+            <img class="w-6 md:w-8" src="/assets/coin.png" alt="" />
+            <p class="text-sm md:text-xl font-bold">
+              <span id="self-fund">5000</span> <span>BDT</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- part 2  -->
+        <div
+          class="flex gap-4 justify-center py-5 bg-white/30 backdrop-blur-md border-b"
+        >
+          <a
+            id="donation-btn"
+            class="btn hover:bg-black hover:text-white bg-[#B4F461] text-xl font-bold"
+            >Donation</a
+          >
+          <a
+            id="history-btn"
+            class="btn hover:bg-black hover:text-white bg-gray-300 text-xl font-bold"
+            >History</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto py-8">
+      <div id="blog-section" class="hidden container mx-auto py-12 px-4">
+        <h1 class="text-4xl font-bold text-center mb-12">
+          Latest Insights & Stories
+        </h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="card bg-white shadow-xl border overflow-hidden">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=600&h=400&auto=format&fit=crop"
+                alt="Charity"
+                class="w-full h-64 object-cover"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-xl">
+                Why Supporting Flood Victims is a Priority
+              </h2>
+              <p class="text-gray-600 text-sm">
+                Floods destroy more than just homes; they shatter dreams. Your
+                small contribution can provide the inspiration needed to start
+                over.
+              </p>
+              <div class="card-actions justify-end mt-4">
+                <button
+                  class="btn btn-ghost text-[#B4F461] hover:bg-[#B4F461] hover:text-black"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card bg-white shadow-xl border overflow-hidden">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=600&h=400&auto=format&fit=crop"
+                alt="Donate"
+                class="w-full h-64 object-cover"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-xl">5 Benefits of Online Donations</h2>
+              <p class="text-gray-600 text-sm">
+                Transparency, speed, and accessibility—how digital donation
+                systems have made it easier to reach those in urgent need.
+              </p>
+              <div class="card-actions justify-end mt-4">
+                <button
+                  class="btn btn-ghost text-[#B4F461] hover:bg-[#B4F461] hover:text-black"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card bg-white shadow-xl border overflow-hidden">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=600&h=400&auto=format&fit=crop"
+                alt="Help students"
+                class="w-full h-64 object-cover"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-xl">
+                Medical Aid for the Quota Movement Injured
+              </h2>
+              <p class="text-gray-600 text-sm">
+                Many students injured during the movement are still in hospital.
+                Financial support is critical for their advanced medical care.
+              </p>
+              <div class="card-actions justify-end mt-4">
+                <button
+                  class="btn btn-ghost text-[#B4F461] hover:bg-[#B4F461] hover:text-black"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card bg-white shadow-xl border overflow-hidden">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=600&h=400&auto=format&fit=crop"
+                alt="Volunteers"
+                class="w-full h-64 object-cover"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-xl">How to Join Our Volunteer Team</h2>
+              <p class="text-gray-600 text-sm">
+                Beyond money, your time and effort can serve humanity. Learn how
+                to become a part of our dedicated volunteer ground force.
+              </p>
+              <div class="card-actions justify-end mt-4">
+                <button
+                  class="btn btn-ghost text-[#B4F461] hover:bg-[#B4F461] hover:text-black"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card bg-white shadow-xl border overflow-hidden">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=600&h=400&auto=format&fit=crop"
+                alt="Noakhali"
+                class="w-full h-64 object-cover"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-xl">
+                Current Flood Situation in Noakhali
+              </h2>
+              <p class="text-gray-600 text-sm">
+                Prolonged rainfall has disrupted life in Noakhali. Our team is
+                working on the ground to monitor and provide relief.
+              </p>
+              <div class="card-actions justify-end mt-4">
+                <button
+                  class="btn btn-ghost text-[#B4F461] hover:bg-[#B4F461] hover:text-black"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card bg-white shadow-xl border overflow-hidden">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?q=80&w=600&h=400&auto=format&fit=crop"
+                alt="Education"
+                class="w-full h-64 object-cover"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-xl">
+                Restoring Education After the Floods
+              </h2>
+              <p class="text-gray-600 text-sm">
+                With schools damaged, children are losing study time. We aim to
+                provide books, pens, and school bags to affected students.
+              </p>
+              <div class="card-actions justify-end mt-4">
+                <button
+                  class="btn btn-ghost text-[#B4F461] hover:bg-[#B4F461] hover:text-black"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card bg-white shadow-xl border overflow-hidden">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=600&h=400&auto=format&fit=crop"
+                alt="Food Aid"
+                class="w-full h-64 object-cover"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-xl">Distributing Dry Food Packages</h2>
+              <p class="text-gray-600 text-sm">
+                In areas where cooking is impossible, we regularly supply
+                nutritious dry food packs to ensure no one goes hungry.
+              </p>
+              <div class="card-actions justify-end mt-4">
+                <button
+                  class="btn btn-ghost text-[#B4F461] hover:bg-[#B4F461] hover:text-black"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card bg-white shadow-xl border overflow-hidden">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=600&h=400&auto=format&fit=crop"
+                alt="Health"
+                class="w-full h-64 object-cover"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-xl">Preventing Waterborne Diseases</h2>
+              <p class="text-gray-600 text-sm">
+                Alongside clean water and saline, we are hosting medical camps
+                to ensure the health and safety of flood-affected people.
+              </p>
+              <div class="card-actions justify-end mt-4">
+                <button
+                  class="btn btn-ghost text-[#B4F461] hover:bg-[#B4F461] hover:text-black"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card bg-white shadow-xl border overflow-hidden">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1508847154043-be5407fcaa5a?q=80&w=600&h=400&auto=format&fit=crop"
+                alt="Future Goal"
+                class="w-full h-64 object-cover"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-xl">
+                Youth's Role in Building a New Bangladesh
+              </h2>
+              <p class="text-gray-600 text-sm">
+                Overcoming all odds, the humanitarian initiatives led by the
+                youth generation are shaping a better future for the nation.
+              </p>
+              <div class="card-actions justify-end mt-4">
+                <button
+                  class="btn btn-ghost text-[#B4F461] hover:bg-[#B4F461] hover:text-black"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- donation section  -->
+      <div id="show-donation-section" class="space-y-8">
+        <!-- Donate for Flood at Noakhali, Bangladesh  -->
+        <div class="hero border rounded-xl p-6 lg:p-12">
+          <div class="flex flex-col lg:flex-row gap-8">
+            <img
+              src="/assets/noakhali.png"
+              class="rounded-lg shadow-xl w-full lg:w-1/2 object-cover"
+            />
+            <div class="lg:w-1/2">
+              <button
+                class="flex items-center gap-2 bg-gray-100 p-2 px-4 rounded-lg text-gray-700"
+              >
+                <img src="/assets/coin.png" alt="" class="w-5 h-5" />
+                <p class="text-lg font-semibold">
+                  <span id="noakhali-total-amount">500</span> BDT
+                </p>
+              </button>
+              <h2 id="noakhali-title" class="pt-4 text-2xl font-bold">
+                Donate for Flood at Noakhali, Bangladesh
+              </h2>
+              <p class="py-4 text-gray-600 leading-relaxed">
+                The recent floods in Noakhali have caused significant damage to
+                homes and infrastructure. Your donation will help provide
+                essential supplies to those affected by this disaster.
+              </p>
+              <input
+                id="noakhali-input"
+                type="number"
+                class="border w-full p-3 rounded-lg my-4 focus:outline-[#B4F461]"
+                placeholder="Write Donation Amount"
+              />
+              <button
+                id="noakhali-donate-btn"
+                class="btn bg-[#B4F461] hover:bg-[#a3e052] w-full font-bold border-none"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Donate for Flood Relief in Feni, Bangladesh  -->
+        <div class="hero border rounded-xl p-6 lg:p-12">
+          <div class="flex flex-col lg:flex-row gap-8">
+            <img
+              src="/assets/feni.png"
+              class="rounded-lg shadow-xl w-full lg:w-1/2 object-cover"
+            />
+            <div class="lg:w-1/2">
+              <button
+                class="flex items-center gap-2 bg-gray-100 p-2 px-4 rounded-lg text-gray-700"
+              >
+                <img src="/assets/coin.png" alt="" class="w-5 h-5" />
+                <p class="text-lg font-semibold">
+                  <span id="feni-total-amount">500</span> BDT
+                </p>
+              </button>
+              <h2 id="feni-title" class="pt-4 text-2xl font-bold">
+                Donate for Flood Relief in Feni, Bangladesh
+              </h2>
+              <p class="py-4 text-gray-600 leading-relaxed">
+                Feni has been hit hard by flash floods. Many families are
+                stranded without food or clean water. Your support is crucial to
+                help them recover from this devastating situation.
+              </p>
+              <input
+                id="feni-input"
+                type="number"
+                class="border w-full p-3 rounded-lg my-4 focus:outline-[#B4F461]"
+                placeholder="Write Donation Amount"
+              />
+              <button
+                id="feni-donate-btn"
+                class="btn bg-[#B4F461] hover:bg-[#a3e052] w-full font-bold border-none"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Aid for Injured in the Quota Movement  -->
+        <div class="hero border rounded-xl p-6 lg:p-12">
+          <div class="flex flex-col lg:flex-row gap-8">
+            <img
+              src="/assets/quota-protest.png"
+              class="rounded-lg shadow-xl w-full lg:w-1/2 object-cover"
+            />
+            <div class="lg:w-1/2">
+              <button
+                class="flex items-center gap-2 bg-gray-100 p-2 px-4 rounded-lg text-gray-700"
+              >
+                <img src="/assets/coin.png" alt="" class="w-5 h-5" />
+                <p class="text-lg font-semibold">
+                  <span id="quota-total-amount">5000</span> BDT
+                </p>
+              </button>
+              <h2 id="quota-title" class="pt-4 text-2xl font-bold">
+                Aid for Injured in the Quota Movement
+              </h2>
+              <p class="py-4 text-gray-600 leading-relaxed">
+                The recent Quota Movement has left many students and civilians
+                injured. We are raising funds to provide medical treatment and
+                urgent care for those in need.
+              </p>
+              <input
+                id="quota-input"
+                type="number"
+                class="border w-full p-3 rounded-lg my-4 focus:outline-[#B4F461]"
+                placeholder="Write Donation Amount"
+              />
+              <button
+                id="quota-donate-btn"
+                class="btn bg-[#B4F461] hover:bg-[#a3e052] w-full font-bold border-none"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal section  -->
+      <dialog id="my_modal_1" class="modal">
+        <div class="modal-box flex flex-col items-center text-center py-10">
+          <h3 class="text-4xl font-bold">Congrates!</h3>
+
+          <div class="py-6">
+            <img src="/assets/coin.png" alt="coin" class="w-12 h-12" />
+          </div>
+
+          <p class="text-gray-600 text-lg">You Have Donated for Humankind</p>
+          <h4 class="text-2xl font-bold py-2">Successfully</h4>
+
+          <div class="modal-action w-full flex justify-center">
+            <form method="dialog" class="w-full text-center">
+              <button
+                class="btn bg-gray-100 hover:bg-gray-200 border-none px-10 text-gray-700 capitalize"
+              >
+                close confirmation
+              </button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
+      <!-- History section  -->
+      <div
+        id="show-donate-history"
+        class="hidden history-section border rounded-xl p-3 lg:p-12 bg-gray-100 mt-10"
+      ></div>
+    </main>
+    <footer class="footer bg-gray-200 text-black items-center p-4">
+      <aside class="grid-flow-col items-center">
+        <img src="/assets/logo.png" alt="">
+        <p>Copyright © Donate Bangladesh - All right reserved</p>
+      </aside>
+      <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <a href="https://www.youtube.com/@DevHubOfficials" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current text-black"
+          >
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+            ></path>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@DevHubOfficials" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current text-red-600"
+          >
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+            ></path>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@DevHubOfficials" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current text-blue-600"
+          >
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+            ></path>
+          </svg>
+        </a>
+      </nav>
+    </footer>
+
+    <script src="js/share.js"></script>
+    <script src="js/donate.js"></script>
+    <script src="js/features.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/feni.js"></script>
+    <script src="js/aid-for-injure.js"></script>
+  </body>
+</html>
