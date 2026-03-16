@@ -40,7 +40,7 @@ document
 
     // ডাইনামিক কন্টেন্ট তৈরি
     div.innerHTML = `
-    <h2 class="text-xl font-bold mb-2">${noakhaliTitle}</h2>
+    <h2 class="text-xl font-bold mb-2">${noakhaliDonate} BDT ${noakhaliTitle}</h2>
         <p class="text-gray-500 bg-gray-50 p-2 rounded-lg">
             Date: ${now.toString()}
         </p>

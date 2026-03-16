@@ -29,7 +29,7 @@ document
     div.classList.add("bg-white", "p-2", "border", "rounded-xl", "my-1");
     const now = new Date();
     div.innerHTML = `
-    <h2 class="text-xl font-bold mb-2">${quotaTitle}</h2>
+    <h2 class="text-xl font-bold mb-2">${quotaDonate} BDT ${quotaTitle}</h2>
         <p class="text-gray-500 bg-gray-50 p-2 rounded-lg">
             Date: ${now.toString()}
         </p>
